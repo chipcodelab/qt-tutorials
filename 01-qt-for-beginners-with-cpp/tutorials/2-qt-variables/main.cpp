@@ -1,6 +1,6 @@
 /*!
  *
- * Variables in Qt
+ * Variables in C C++
  *
  */
 
