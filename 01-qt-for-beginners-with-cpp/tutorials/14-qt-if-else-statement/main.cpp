@@ -2,7 +2,7 @@
  *
  * Flow Control in C C++
  *
- * Input and Output - qdebug
+ * Flow control - If, else if, else statement
  *
  */
 
@@ -25,13 +25,14 @@ int main(int argc, char *argv[])
     int age = 0;
     qInfo() << "Enter your age:";
     cin >> age;
-    qInfo() << "You are" << age << "Years old";
 
-    qInfo() << "Information";
-    qDebug() << "Debug";
-    qWarning() << "Warning";
-    qCritical() << "Critical";
-    qFatal("Test Crash !!!!");
+    if (age > 18) {
+        qInfo() << "You are over 18 years old!";
+    } else if(age < 12) {
+        qInfo() << "You are not even a teen yet!";
+    } else {
+        qInfo() << "You are not over 18 years old!";
+    }
 
     return a.exec();
 }

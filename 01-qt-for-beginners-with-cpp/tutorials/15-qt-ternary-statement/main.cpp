@@ -2,7 +2,7 @@
  *
  * Flow Control in C C++
  *
- * Input and Output - qdebug
+ * Flow control - If, else if, else statement combined in to single line. Ternary statement.
  *
  */
 
@@ -25,13 +25,11 @@ int main(int argc, char *argv[])
     int age = 0;
     qInfo() << "Enter your age:";
     cin >> age;
-    qInfo() << "You are" << age << "Years old";
 
-    qInfo() << "Information";
-    qDebug() << "Debug";
-    qWarning() << "Warning";
-    qCritical() << "Critical";
-    qFatal("Test Crash !!!!");
+    /*!
+     * Ternary statement - if and else combine in to single line.
+     */
+    age > 0 && age <= 130 ? qInfo("You entered a valid age.") : qFatal("You did not enter a valid age!");
 
     return a.exec();
 }
